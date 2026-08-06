@@ -1,0 +1,35 @@
+button {
+  cursor: pointer;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.martyr {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 45px;
+  padding: 40px 0;
+}
+.martyr > div {
+  /* width: 370px; */
+  width: calc((1200px - 90px) / 3);
+  box-shadow: 5px 8px 18px #ccc;
+  border-radius: 12px;
+}
+.martyr > div img {
+  width: 100%;
+  height: 300px;
+  border-radius: 12px 12px 0 0;
+}
+.martyr > div h2, p {
+  /* CSS Logical Properties */
+  padding-inline-start: 12px;
+}
