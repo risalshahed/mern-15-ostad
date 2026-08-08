@@ -1,0 +1,7 @@
+Step 1 & 2: Create Square & Board Component
+      Call Square 9 times (3 x 3 times) from Board Component
+      Call Board from App Component
+
+
+Step 3: Pass & Receive Props
+
