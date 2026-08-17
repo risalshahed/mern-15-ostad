@@ -7,13 +7,13 @@ const Users = () => {
     }, [])
 
   return (
-    <div>
+    <section>
       <h1>
         Users
       </h1>
 
       <SideEffects />
-    </div>
+    </section>
   )
 }
 

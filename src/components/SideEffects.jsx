@@ -38,25 +38,35 @@ const SideEffects = () => {
   }, [])
 
   return (
-    <div>
+    <div className="app">
       <h1>
         SideEffects
       </h1>
 
       {
         users.map(user =>
-          <p key={user.id}>
+          <p key={user.id} style={{ marginBottom: '0.5rem' }}>
             {user.name}
           </p>
         )
       }
 
-      <button onClick={() => setCount(count + 1)}>
-        +
-      </button>
-      <p>
-        {count}
-      </p>
+      
+      <div style={
+        {
+          display: 'flex',
+          gap: '12px',
+          alignItems: 'center',
+          margin: '2rem auto'
+        }
+      }>
+        <button onClick={() => setCount(count + 1)}>
+          +
+        </button>
+        <p>
+          {count}
+        </p>
+      </div>
     </div>
   )
 }

@@ -1,10 +1,83 @@
+/* Global */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 button {
   cursor: pointer;
 }
+h1:not(header h1) {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+/* Header & Nav */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #222;
+  color: white;
+  padding: 1rem 0;
+}
+header > div {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+  column-gap: 2rem;
+}
+nav li {
+  list-style-type: none;
+}
+nav li a {
+  text-decoration: none;
+  color: white;
+}
+nav li a:hover {
+  color: yellow;
+}
 
+/* Main Content */
+main {
+  padding: 40px 0;
+  max-width: 1200px;
+  margin: auto;
+}
+/* Each Section */
+section {
+  min-height: 100vh;
+}
+/* app class */
 .app {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+/* Form & its fields */
+form.app {
+  row-gap: 16px;
+}
+input {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+}
+input:focus {
+  outline: none;
+}
+button[type='submit'] {
+  background: blue;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+}
+button[type='submit']:hover {
+  filter: brightness(0.9);
 }

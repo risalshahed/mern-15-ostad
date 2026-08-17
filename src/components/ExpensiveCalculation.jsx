@@ -37,7 +37,7 @@ const ExpensiveCalculation = () => {
   }
 
   return (
-    <div>
+    <div className="app">
       <h1>
         Expensive Calculation
       </h1>
@@ -46,7 +46,8 @@ const ExpensiveCalculation = () => {
         {
           display: 'flex',
           gap: '12px',
-          alignItems: 'center'
+          alignItems: 'center',
+          margin: '2rem auto'
         }
       }>
         <p>
@@ -57,7 +58,14 @@ const ExpensiveCalculation = () => {
         </button>
       </div>
 
-      <div>
+      <div style={
+        {
+          display: 'flex',
+          gap: '12px',
+          alignItems: 'center',
+          margin: '2rem auto'
+        }
+      }>
         <h3>
           Result: {result}
         </h3>

@@ -7,12 +7,12 @@ const Home = () => {
   }, [])
     
   return (
-    <div>
+    <section>
       <h1>
         Home
       </h1>
       <ExpensiveCalculation />
-    </div>
+    </section>
   )
 }
 

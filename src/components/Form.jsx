@@ -27,6 +27,7 @@ const Form = () => {
     <form
       onSubmit={handleSubmit}
       style={{padding: '32px 0'}}
+      className="app"
     >
       <input
         type="text"

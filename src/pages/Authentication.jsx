@@ -8,14 +8,14 @@ const Authentication = () => {
   }, [])
 
   return (
-    <div>
+    <section>
       <h1>
         Authentication
       </h1>
 
       <Form />
       <MultiStateForm />
-    </div>
+    </section>
   )
 }
 
