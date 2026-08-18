@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+button {
+  cursor: pointer;
+}
+
+.todoItem {
+  box-shadow: 5px 8px 18px #ccc;
+}
