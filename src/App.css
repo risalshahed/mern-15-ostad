@@ -1,0 +1,40 @@
+button {
+  cursor: pointer;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ .counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+.blogs {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem 3%;
+}
+.blogs > div {
+  box-shadow: 5px 8px 18px #ccc;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+.search-input-title {
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+input {
+  width: 40%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #aaa;
+  border-radius: 0.5rem;
+  outline: none;
+}
