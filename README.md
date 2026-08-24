@@ -1,16 +1,52 @@
-# React + Vite
+# React in Depth
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## N.B.: Run the Frontend & Backend Server to Get Server API Call
 
-Currently, two official plugins are available:
+### Clone the Repository
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+git clone https://github.com/risalshahed/mern-15-ostad.git
+```
 
-## React Compiler
+### Go to the Project Directory
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+cd mern-15-ostad
+```
 
-## Expanding the ESLint configuration
+### Switch to the Branch
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+git switch 23.3-react-deep
+```
+
+## To Run the Frontend
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Start the Development Server
+
+```bash
+npm run dev
+```
+
+## To Run the Backend
+```bash
+cd server-blogs-api
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Start the Development Server
+
+```bash
+npm run dev
+```
