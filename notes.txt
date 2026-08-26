@@ -1,0 +1,36 @@
+src/
+│
+├── assets/
+│
+├── components/
+│   ├── layout/
+│   │   ├── Header.jsx
+│   │   ├── Footer.jsx
+│   │   └── MainLayout.jsx
+│   │
+│   ├── common/
+│   │   ├── LoadingSkeleton.jsx
+│   │   └── SectionTitle.jsx
+│   │
+│   ├── home/
+│   │   ├── HeroSlider.jsx
+│   │   ├── Features.jsx
+│   │   ├── Brands.jsx
+│   │   └── Categories.jsx
+│   │
+│   └── product/
+│       └── ProductCard.jsx
+│
+├── context/
+│   └── AppContext.jsx
+│
+├── store/
+│   ├── store.js
+│   └── productSlice.js
+│
+├── pages/
+│   └── Home.jsx
+│
+├── App.jsx
+├── main.jsx
+└── index.css
