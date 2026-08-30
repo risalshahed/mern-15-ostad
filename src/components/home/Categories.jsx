@@ -2,8 +2,11 @@ import { useContext } from "react";
 import { useFetch } from "../../hooks/useFetch.js";
 import { AppContext } from "../../context/index.js";
 import LoadingSkeleton from "../common/LoadingSkeleton.jsx";
+import { useNavigate } from "react-router-dom";
 
 const Categories = () => {
+  const navigate = useNavigate();
+
   const {
     data,
     loading,
@@ -38,7 +41,10 @@ const Categories = () => {
           data?.slice(0, 8).map(category =>
             <button
               key={crypto.randomUUID()}
-              onClick={() => setSelectedCategory(category.slug)}
+              onClick={() => {
+                setSelectedCategory(category.slug)
+                navigate('/products')
+              }}
               className={`rounded-full border px-4 py-2 ${
               selectedCategory === category.slug
                 ? "bg-black text-white"

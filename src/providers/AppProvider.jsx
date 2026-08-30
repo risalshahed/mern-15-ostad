@@ -2,11 +2,14 @@ import { useState } from "react"
 import { AppContext } from "../context/index.js";
 
 const AppProvider = ({ children }) => {
-  const [selectedCategory, setSelectedCategory] = useState('initial');
+  const [selectedCategory, setSelectedCategory] = useState('');
+  const [selectedBrand, setSelectedBrand] = useState('');
 
   const value = {
     selectedCategory,
-    setSelectedCategory
+    setSelectedCategory,
+    selectedBrand,
+    setSelectedBrand
   }
 
   return (

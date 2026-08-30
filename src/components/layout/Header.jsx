@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const Header = () => {
   return (
     <header className="bg-black text-white">
@@ -6,10 +8,10 @@ const Header = () => {
           Product API
         </h1>
         <nav className="flex gap-6">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Products</a>
-          <a href="#">Contact</a>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/products">Products</Link>
+          <Link to="/contact">Contact</Link>
         </nav>
       </div>
     </header>
