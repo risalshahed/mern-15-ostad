@@ -38,7 +38,7 @@ const Home = () => {
         <h2 className="mb-6 text-3xl font-bold">
           Latest Products
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           {
             products?.map(product =>
               <ProductCard

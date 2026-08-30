@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 const Header = () => {
   return (
-    <header className="bg-black text-white">
+    <header className="bg-black text-white sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-5">
         <h1>
           Product API
