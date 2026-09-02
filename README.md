@@ -6,6 +6,8 @@ This API provides authentication, user profile management, cart, wishlist, and l
 
 ---
 
+[Risal Shahed](https://risalshahed.com)
+
 ## Tech Stack
 
 - Node.js
