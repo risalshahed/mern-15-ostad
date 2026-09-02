@@ -6,8 +6,6 @@ This API provides authentication, user profile management, cart, wishlist, and l
 
 ---
 
-[Risal Shahed](https://risalshahed.com)
-
 ## Tech Stack
 
 - Node.js
@@ -799,24 +797,24 @@ Product information is sent to the Cart/Wishlist APIs as a product snapshot:
 
 # Protected vs Public APIs
 
-| API | Authentication |
-|---|---|
-| POST `/api/auth/register` | Public |
-| POST `/api/auth/login` | Public |
-| GET `/api/auth/me` | Required |
-| GET `/api/users/profile` | Required |
-| PUT `/api/users/profile` | Required |
-| GET `/api/cart` | Required |
-| POST `/api/cart` | Required |
-| PUT `/api/cart/:productId` | Required |
-| DELETE `/api/cart/:productId` | Required |
-| DELETE `/api/cart` | Required |
-| GET `/api/wishlist` | Required |
-| POST `/api/wishlist` | Required |
-| DELETE `/api/wishlist/:productId` | Required |
-| GET `/api/legal/terms` | Public |
-| GET `/api/legal/privacy` | Public |
-| GET `/api/legal/how-to-buy` | Public |
+| API                               | Authentication |
+| --------------------------------- | -------------- |
+| POST `/api/auth/register`         | Public         |
+| POST `/api/auth/login`            | Public         |
+| GET `/api/auth/me`                | Required       |
+| GET `/api/users/profile`          | Required       |
+| PUT `/api/users/profile`          | Required       |
+| GET `/api/cart`                   | Required       |
+| POST `/api/cart`                  | Required       |
+| PUT `/api/cart/:productId`        | Required       |
+| DELETE `/api/cart/:productId`     | Required       |
+| DELETE `/api/cart`                | Required       |
+| GET `/api/wishlist`               | Required       |
+| POST `/api/wishlist`              | Required       |
+| DELETE `/api/wishlist/:productId` | Required       |
+| GET `/api/legal/terms`            | Public         |
+| GET `/api/legal/privacy`          | Public         |
+| GET `/api/legal/how-to-buy`       | Public         |
 
 ---
 
