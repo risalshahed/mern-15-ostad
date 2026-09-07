@@ -9,6 +9,9 @@ import userRoutes from "./routes/userRoutes.js";
 import cartRoutes from "./routes/cartRoutes.js";
 import wishlistRoutes from "./routes/wishlistRoutes.js";
 import legalRoutes from "./routes/legalRoutes.js";
+import orderRoutes from "./routes/orderRoutes.js";
+import reviewRoute from "./routes/reviewRoute.js";
+
 
 import {
   notFound,
@@ -61,6 +64,9 @@ app.use(
   "/api/legal",
   legalRoutes
 );
+
+app.use("/api/order", orderRoutes);
+app.use("/api/review", reviewRoute);
 
 app.use(notFound);
 
