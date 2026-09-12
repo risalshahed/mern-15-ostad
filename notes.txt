@@ -1,0 +1,64 @@
+Frontend Features
+
+* Sign up / Register
+* Login
+* Logout
+* User Profile
+* Products
+* Wishlist
+* Cart
+* Orders
+* Invoice
+* Review
+
+
+
+
+
+src/
+├── assets/
+│
+├── components/
+│   ├── common/
+│   │   ├── Button.jsx
+│   │   ├── Container.jsx
+│   │   ├── SectionTitle.jsx
+│   │   └── LoadingSkeleton.jsx
+│   │
+│   ├── layout/
+│   │   ├── Header.jsx
+│   │   └── Footer.jsx
+│   │
+│   ├── home/
+│   │   ├── Hero.jsx
+│   │   ├── CategorySection.jsx
+│   │   └── FeaturedProducts.jsx
+│   │
+│   ├── products/
+│   │   ├── ProductCard.jsx
+│   │   ├── ProductGrid.jsx
+│   │   └── ProductFilter.jsx
+│   │
+│   ├── cart/
+│   │   ├── CartItem.jsx
+│   │   └── CartSummary.jsx
+│   │
+│   └── wishlist/
+│       └── WishlistItem.jsx
+│
+├── pages/
+│   ├── Home.jsx
+│   ├── Products.jsx
+│   ├── ProductDetails.jsx
+│   ├── Login.jsx
+│   ├── Profile.jsx
+│   ├── Cart.jsx
+│   ├── Wishlist.jsx
+│   ├── Terms.jsx
+│   ├── Privacy.jsx
+│   ├── HowToBuy.jsx
+│   └── NotFound.jsx
+│
+├── App.jsx
+├── main.jsx
+└── App.css
