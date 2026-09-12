@@ -3,7 +3,8 @@ import express from "express";
 import {
   getWishlist,
   addToWishlist,
-  removeFromWishlist
+  removeFromWishlist,
+  clearWishlist
 } from "../controllers/wishlistController.js";
 
 import {
@@ -15,7 +16,8 @@ const router = express.Router();
 router
   .route("/")
   .get(protect, getWishlist)
-  .post(protect, addToWishlist);
+  .post(protect, addToWishlist)
+  .delete(protect, clearWishlist); // NEW — clear whole wishlist
 
 router.delete(
   "/:productId",

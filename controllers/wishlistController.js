@@ -157,9 +157,45 @@ const removeFromWishlist = async (
   }
 };
 
+// NEW — Clear Wishlist (mirrors clearCart in cartController.js)
+const clearWishlist = async (
+  req,
+  res,
+  next
+) => {
+  try {
+    const wishlist =
+      await Wishlist.findOne({
+        user: req.user._id
+      });
+
+    if (!wishlist) {
+      return res.status(404).json({
+        success: false,
+        message:
+          "Wishlist not found."
+      });
+    }
+
+    wishlist.products = [];
+
+    await wishlist.save();
+
+    res.status(200).json({
+      success: true,
+      message:
+        "Wishlist cleared successfully.",
+      wishlist
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
 export {
   getWishlist,
   addToWishlist,
-  removeFromWishlist
+  removeFromWishlist,
+  clearWishlist
 };
 
