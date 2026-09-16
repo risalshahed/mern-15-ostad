@@ -4,8 +4,8 @@ const Navbar = () => {
   return (
     <nav className="bg-black text-white">
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
-        <Link href='/' className="text-xl font-bold">
-          Logo
+        <Link href='/' className="text-xl font-bold capitalize">
+          logo
         </Link>
 
         <div className="flex gap-6">
