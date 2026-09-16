@@ -1,13 +1,15 @@
-export default function Home() {
+const Contact = () => {
   return (
     <main classname='mx-auto max-w-6xl px-6 py-16 my-20'>
       <h1 className="text-4xl font-bold">
-        Welcome in Next JS&apos; World
+        Contact Page
       </h1>
 
       <p className="mt-4 text-gray-600">
-        Home Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, libero.
+        Contact Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, libero.
       </p>
     </main>
-  );
+  )
 }
+
+export default Contact;
