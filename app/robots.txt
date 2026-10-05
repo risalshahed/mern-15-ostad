@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Allow: /hotels
+Allow: /hotels/dhaka
+Allow: /hotels/chattogram
+Allow: /hotels/rajshahi
+
+Disallow: /super-admin/
+Disallow: /admin/
+Disallow: /dashboard/
