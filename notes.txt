@@ -1,0 +1,27 @@
+// 29.1
+npm install mongoose bcryptjs jose
+
+
+devblog/
+├── app/
+│   ├── blog/[id]/page.js        → single post
+│   ├── dashboard/
+│   │   ├── page.js              → my posts
+│   │   ├── new/page.js          → create
+│   │   └── edit/[id]/page.js    → update
+│   ├── login/page.js
+│   ├── register/page.js
+│   ├── error.js
+│   └── not-found.js
+├── actions/                     → Server Actions (form submit logic)
+│   ├── auth.js
+│   └── post.js
+├── components/  (AuthForm, PostForm, Navbar, BlogCard)
+├── lib/         (db.js, session.js, posts.js)
+├── models/      (User.js, Post.js)
+├── proxy.js                     → route protection
+└── .env.local
+
+
+Script to Add data in database
+node --env-file=.env.local scripts/seed.mjs
